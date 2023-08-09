@@ -5,7 +5,11 @@
     flex-wrap: wrap;
     height: 50%;
  }
-.features h3{}
+
+ .features h3 {
+    width: 100%;
+    
+}
 
 .features img {
     width: 75%;
@@ -13,7 +17,6 @@
     max-height: 125px;
 }
 
-.features p{}
 
 .boton{   
      display: flex;
