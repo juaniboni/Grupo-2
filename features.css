@@ -1,8 +1,27 @@
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+ }
 .features h3{}
 
 .features img {
-    width: 100%;
-    object-fit: cover;
+    width: 75%;
+    object-fit:contain;
+    max-height: 125px;
 }
 
 .features p{}
+
+.boton{   
+     display: flex;
+    justify-content: center;
+
+}
+.botonFeatures{
+
+    background-color: orangered;
+    color: white;
+}
