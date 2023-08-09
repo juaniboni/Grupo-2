@@ -1,0 +1,38 @@
+#blog {
+    padding: 60px 0 80px;
+  }
+  
+  .tarjeta {
+    background-color: white;
+    border: 1px solid #999;
+  }
+  .tarjeta img {
+    width: 100%;
+  }
+  .tarjeta .main-text {
+    padding: 15px;
+  }
+  .tarjeta .main-text h3 {
+  }
+  .tarjeta .main-text p {
+  }
+  .tarjeta .footer-tarjeta {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #999;
+  }
+  .tarjeta .footer-tarjeta img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+  }
+  .tarjeta .footer-tarjeta .info {
+    margin-left: 10px;
+  }
+  .tarjeta .footer-tarjeta .info p:first-child {
+    margin: 0;
+  }
+  .tarjeta .footer-tarjeta .info p:last-child {
+    margin: 0;
+  }
