@@ -56,3 +56,35 @@
 .tarjeta .main-text {
   padding: 8px 12px;
 }
+
+.tarjeta .footer-tarjeta img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-right: 0.6rem;
+}
+
+.tarjeta .footer-tarjeta .info p:first-child {
+  margin: 0;
+}
+
+.tarjeta .footer-tarjeta .info p:last-child {
+  margin: 0;
+}
+
+.black-background-container {
+  background-color: #111;
+  color: #F5F5F5;
+
+  
+}
+
+ul.lista{
+padding: 0;
+  list-style:none;
+} 
+
+.subscription {
+border: 1px solid #777;
+background-color: white;
+}
