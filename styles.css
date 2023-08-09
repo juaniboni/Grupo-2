@@ -1,15 +1,46 @@
+/*selector universal*/
+
 @import url(/features.css);
 @import url("pricing.css");
+
+* {
+  margin: 0;
+}
+
+#hero .btn-explore {
+  color: white;
+  background: #ff3e1e;
+}
+
+#hero .btn-documentation {
+  color: #ff3e1e;
+  background-color: #f7d4c9;
+}
+
+.btn-buy {
+  color: white;
+  background: #ff3e1e;
+}
+
+.btn-buy:hover {
+  background-color: #ff6833;
+  color: white;
+}
+
 #blog {
   padding: 60px 0 80px;
 }
 
 .tarjeta {
-  background-color: white;
-  border: 1px solid #999;
+  border: 1px solid #b5b5b5;
+  height: 100%;
 }
+
 .tarjeta img {
   width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background-color: white;
 }
 .tarjeta .main-text {
   padding: 15px;
@@ -18,20 +49,42 @@
 .tarjeta .footer-tarjeta {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  border-top: 1px solid #999;
+  border-top: 1px solid #777;
+  padding: 8px 12px;
 }
+
+.tarjeta .main-text {
+  padding: 8px 12px;
+}
+
 .tarjeta .footer-tarjeta img {
   width: 40px;
   height: 40px;
   border-radius: 100px;
+  margin-right: 0.6rem;
 }
-.tarjeta .footer-tarjeta .info {
-  margin-left: 10px;
-}
+
 .tarjeta .footer-tarjeta .info p:first-child {
   margin: 0;
 }
+
 .tarjeta .footer-tarjeta .info p:last-child {
   margin: 0;
+}
+
+.black-background-container {
+  background-color: #111;
+  color: #F5F5F5;
+
+  
+}
+
+ul.lista{
+padding: 0;
+  list-style:none;
+} 
+
+.subscription {
+border: 1px solid #777;
+background-color: white;
 }
