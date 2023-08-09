@@ -1,0 +1,25 @@
+.cajaFree,
+.cajaStandard,
+.cajaPremium {
+    border-style: solid;
+    border-color: rgb(205, 205, 205);
+    border-radius: 2%;
+    border-width: 2px;
+    font-weight: 500;
+
+}
+
+.cajaStandard {
+    border-color: rgb(64, 64, 218);
+    border-width: 3px;
+}
+
+.btnStandard {
+    background-color: rgb(207, 207, 248);
+    color: rgb(66, 66, 240);
+}
+
+.btnPremium {
+    background-color: rgb(207, 207, 248);
+    color: rgb(14, 14, 186);
+}

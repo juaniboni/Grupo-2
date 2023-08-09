@@ -17,8 +17,93 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav></nav>
-    <main></main>
+ <!-- Navbar -->
+    <div class="container">
+      <div class="nav_text">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand brand" href="#">Hack Analytics</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active home" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Products
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item disabled" href="#">Category A</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Product A1</a></li>
+                    <li><a class="dropdown-item" href="#">Product A2</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item disabled" href="#">Category B</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Product B1</a></li>
+                    <li><a class="dropdown-item" href="#">Product B2</a></li>
+                    <li><a class="dropdown-item" href="#">Product B3</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <button class="btn btn-buy rounded-pill" type="submit">
+                Buy now
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- 100% del ancho, más allá del container -->
+    <section id="hero" class="py-5" my-3>
+      <!-- Primer fila con dos columnas, una para el texto y otra para la imagen. Tiene max width por ser la clase container de bootstrap  -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h1>Get insights that help your business grow.</h1>
+            <p>
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+
+            <button class="btn btn-explore">Explore products</button>
+            <button class="btn btn-documentation">Documentation</button>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="img/undraw_data_reports_706v.svg"
+              class="img-fluid"
+              alt="Reporte de datos"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="features" style="background-color: #f5f5f5">
       <h2>Feature</h2>
       <p>
@@ -94,97 +179,204 @@
         </div>
       </div>
     </section>
-    <section id="pricing">
+    <section id="pricing" class="mt-5 mb-5">
       <div class="container">
         <h2 class="text-center">Simple Pricing</h2>
         <p class="text-center">Easy pricing means no surprises.</p>
         <div class="row">
-          <div class="col-4">
-            <div class="border">
-              <div class="text-center mt-4">
-                <button type="button" class="rounded-4 btn btn-sm border ps-3 pe-3">Free</button>
-                
-                <p>$ 0 /mo</p>
+          <div class="col-12 col-lg-4">
+            <div class="m-1 pt-4 cajaFree">
+              <div class="text-center">
+                <button type="button" class="rounded-4 btn btn-sm border ps-3 pe-3"><b>Free</b></button>
+                <p class="pt-1"><sup class="fw-bold">$</sup> <span class="fs-4 fw-bold">0</span> /mo</p> 
               </div>         
               <ul class="">
                 <li class="list-group-item">
-                  <input class="form-check-input me-1" type="radio" value="" id="firstCheckbox">
-                  <label class="form-check-label" for="firstCheckbox">Up to 15 users</label>
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox1" checked>
+                  <label class="form-check-label" for="Checkbox1">Up to 15 users</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox2" checked>
+                  <label class="form-check-label" for="Checkbox2">Email and live chat support</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox3">
+                  <label class="form-check-label" for="Checkbox3">Style customizer</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox4">
+                  <label class="form-check-label" for="Checkbox4">Custom components</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox5">
+                  <label class="form-check-label" for="Checkbox5">Expanded utilities</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox6">
+                  <label class="form-check-label" for="Checkbox6">Third-party integration</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox7">
+                  <label class="form-check-label" for="Checkbox7">Layout options</label>
                 </li>
               </ul>
             </div>
           </div>
             
-          <div class="col-4">2</div>
-          <div class="col-4">3</div>
+          <div class="col-12 col-lg-4">
+            <div class="m-1 pt-4 cajaStandard">
+              <div class="text-center">
+                <button type="button" class="rounded-4 btn btn-sm border ps-3 pe-3 btnStandard"><b>Standard</b></button>
+                <p class="pt-1"><sup class="fw-bold">$</sup> <span class="fs-4 fw-bold">19</span> /mo</p> 
+              </div>         
+              <ul class="">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox1" checked>
+                  <label class="form-check-label" for="Checkbox1">Up to 15 users</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox2" checked>
+                  <label class="form-check-label" for="Checkbox2">Email and live chat support</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox3" checked>
+                  <label class="form-check-label" for="Checkbox3">Style customizer</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox4" checked>
+                  <label class="form-check-label" for="Checkbox4">Custom components</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox5">
+                  <label class="form-check-label" for="Checkbox5">Expanded utilities</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox6">
+                  <label class="form-check-label" for="Checkbox6">Third-party integration</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox7">
+                  <label class="form-check-label" for="Checkbox7">Layout options</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="m-1 pt-4 cajaPremium">
+              <div class="text-center">
+                <button type="button" class="rounded-4 btn btn-sm border ps-3 pe-3 btnPremium"><b>Premium</b></button>
+                <p class="pt-1"><sup class="fw-bold">$</sup> <span class="fs-4 fw-bold">29</span> /mo</p> 
+              </div>         
+              <ul class="">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox1" checked>
+                  <label class="form-check-label" for="Checkbox1">Up to 15 users</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox2" checked>
+                  <label class="form-check-label" for="Checkbox2">Email and live chat support</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox3" checked>
+                  <label class="form-check-label" for="Checkbox3">Style customizer</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox4" checked>
+                  <label class="form-check-label" for="Checkbox4">Custom components</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox5" checked>
+                  <label class="form-check-label" for="Checkbox5">Expanded utilities</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox6" checked>
+                  <label class="form-check-label" for="Checkbox6">Third-party integration</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="radio" value="" id="Checkbox7" checked>
+                  <label class="form-check-label" for="Checkbox7">Layout options</label>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
+      
     </section>
-    <section id="blog" style="background-color: #f5f5f5">
+    <section id="from-the-blog" style="background-color: #f5f5f5">
       <div class="container">
-        <div class="text-center">
+        <div class="intro text-center">
           <h2>From the blog</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Repudiandae, delectus alias odio blanditiis dolor voluptates.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            repudiandae dolorem est laborum necessitatibus voluptates commodi
+            tenetur fugit odio quae!
           </p>
         </div>
         <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="tarjeta">
-              <img src="img/blog-3.avif" alt="" />
+          <div class="col-12 col-lg-4">
+            <div class="tarjeta d-flex flex-column justify-content-between">
+              <img src="img/blog-3.avif" class="img-fluid" alt="" />
               <div class="main-text">
                 <h3>From the blog</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repellat dicta, placeat eveniet reiciendis tempora fugit
-                  expedita autem molestiae? Similique, numquam!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque animi praesentium nobis, laudantium, magnam consequatur
+                  necessitatibus error id nostrum minima dolorem reiciendis
+                  obcaecati doloribus ullam repellendus nisi asperiores.
+                  Officia, obcaecati!
                 </p>
               </div>
               <div class="footer-tarjeta">
-                <img src="img/person_2.avif" alt="" />
+                <img src="img/person_2.avif" class="img-fluid" alt="" />
                 <div class="info">
-                  <p>José López</p>
-                  <p>Marzo 16, 2023. 6 min read</p>
+                  <p>María Pérez</p>
+                  <p>Marzo 16, 2023 . 6 min read</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="tarjeta">
-              <img src="img/blog-1.avif" alt="" />
+
+          <div class="col-12 col-lg-4">
+            <div class="tarjeta d-flex flex-column justify-content-between">
+              <img src="img/blog-1.avif" class="img-fluid" alt="" />
               <div class="main-text">
-                <h3>From the blog</h3>
+                <h3>How to use search engine optimization to drive sales</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repellat dicta, placeat eveniet reiciendis tempora fugit
-                  expedita autem molestiae? Similique, numquam!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque animi praesentium nobis, laudantium, magnam consequatur
+                  necessitatibus error id nostrum minima dolorem reiciendis
+                  obcaecati doloribus ullam repellendus nisi asperiores.
+                  Officia, obcaecati!
                 </p>
               </div>
               <div class="footer-tarjeta">
                 <img src="img/person_1.avif" alt="" />
                 <div class="info">
-                  <p>María Pérez</p>
-                  <p>Marzo 16, 2023. 6 min read</p>
+                  <p>José López</p>
+                  <p>Marzo 16, 2023 . 6 min read</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="tarjeta">
+
+          <div class="col-12 col-lg-4">
+            <div class="tarjeta d-flex flex-column justify-content-between">
               <img src="img/blog-2.avif" alt="" />
               <div class="main-text">
-                <h3>From the blog</h3>
+                <h3>Improve your costumer experience</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repellat dicta, placeat eveniet reiciendis tempora fugit
-                  expedita autem molestiae? Similique, numquam!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque animi praesentium nobis, laudantium, magnam consequatur
+                  necessitatibus error id nostrum minima dolorem reiciendis
+                  obcaecati doloribus ullam repellendus nisi asperiores.
+                  Officia, obcaecati!
                 </p>
               </div>
               <div class="footer-tarjeta">
                 <img src="img/person_3.avif" alt="" />
                 <div class="info">
                   <p>Victoria González</p>
-                  <p>Marzo 16, 2023. 6 min read</p>
+                  <p>Marzo 16, 2023 . 6 min read</p>
                 </div>
               </div>
             </div>
@@ -192,7 +384,94 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <div class="subscription p-4 my-4">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>From the blog</h3>
+            <p>
+              Stay in the loop with the latest stories and breaking headlines
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="e.g.:maria.perez@gmail.com"
+                aria-label="Email to subscribe"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-buy"
+                type="button"
+                id="button-addon2"
+              >
+                Button
+              </button>
+            </div>
+            <p>You can unsubscribe at any time</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <footer></footer>
+    <div class="black-background-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <h4>Hack Analitycs</h4>
+
+            <i class="fa-brands fa-facebook me-2"></i>
+            <i class="fa-brands fa-github mx-2"></i>
+            <i class="fa-brands fa-instagram mx-2"></i>
+            <i class="fa-brands fa-twitter mx-2"></i>
+          </div>
+
+          <div class="col-md-2 offset-md-2">
+            <h4>Solutions</h4>
+            <ul class="lista">
+              <li>Marketing</li>
+              <li>Analytics</li>
+              <li>Commerce</li>
+              <li>Insights</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Support</h4>
+            <ul class="lista">
+              <li>Pricing</li>
+              <li>Documentation</li>
+              <li>Guides</li>
+              <li>API Status</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Company</h4>
+            <ul class="lista">
+              <li>About</li>
+              <li>Blog</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Partners</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>Legal</h4>
+            <ul class="lista">
+              <li>Privacy Policy</li>
+              <li>Terms and Conditions</li>
+              <li>Licence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container d-flex justify-content-between">
+        <p>Copyright Hack Analytics 2023</p>
+        <p>Privacy Policy Terms & Conditions</p>
+      </div>
+    </div>
+
   </body>
 </html>
