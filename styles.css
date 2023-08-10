@@ -88,3 +88,82 @@ padding: 0;
 border: 1px solid #777;
 background-color: white;
 }
+/* curvas */
+
+#features {
+  position: relative;
+}
+
+#features::before {
+
+  content: " ";
+  height: 30px;
+  width: 100%;
+  background: #ffffff url(img/curveGray.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -30px;
+
+}
+
+#pricing {
+  position: relative;
+}
+
+#pricing::before {
+
+  content: " ";
+  height: 30px;
+  width: 100%;
+  background: #f5f5f5 url(img/curveWhite.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -50px;
+
+}
+
+#pricing {
+  position: relative;
+}
+
+#pricing::before {
+
+  content: " ";
+  height: 30px;
+  width: 100%;
+  background: #f5f5f5 url(img/curveWhite.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -50px;
+
+}
+
+.black-background-container {
+  position: relative;
+}
+
+.black-background-container::before {
+
+  content: " ";
+  height: 50px;
+  width: 100%;
+  background: #f5f5f5 url(img/curveDarkGray.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -40px;
+
+}
+
+
+.posicion {
+  position: relative;
+}
+
+.subscription {
+  position: absolute;
+  top: 500px;
+}
